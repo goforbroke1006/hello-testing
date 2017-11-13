@@ -6,6 +6,7 @@ tests/_data/users.yml
 /tests/_support/_generated/
 
 /vendor/
+codeception.yml
 chromedriver
 chromedriver.exe
 composer.lock

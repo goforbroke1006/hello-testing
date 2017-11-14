@@ -20,4 +20,9 @@ fi
 curl -o chromedriver.zip "${WEBDRIVER_URL}"
 unzip -o chromedriver.zip && rm -f chromedriver.zip
 
-cp tests/_data/users.yml.dist tests/_data/users.yml
+if [ ! -f ./tests/_data/users.yml ]; then
+    cp ./tests/_data/users.yml.dist ./tests/_data/users.yml
+fi
+if [ ! -f ./codeception.yml ]; then
+    cp ./codeception.yml.dist ./codeception.yml
+fi

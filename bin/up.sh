@@ -17,7 +17,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     DRIVER_FILE="./chromedriver"
     CODECEPT="vendor/bin/codecept"
 
-    kill -9 $(sudo lsof -t -i:${PORT})
+    kill -9 $(lsof -t -i:${PORT})
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     OS_TYPE="WINDOWS"
     DRIVER_FILE="./chromedriver.exe"

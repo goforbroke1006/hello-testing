@@ -8,6 +8,11 @@ With this project I can easiely start to write acceptance (integration) tests.
 ### How use
 
 1. Run requirements.sh at first time for installation Selenium, ChromeDrive.
+2. Add new test with
+    ``` bash
+    ./vendor/bin/codecept generate:cest acceptance SaleAds
+    ```
+    
 2. Run up.sh for running Selenium and tests.
 
 

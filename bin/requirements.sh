@@ -18,8 +18,6 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
 fi
 
 curl -o chromedriver.zip "${WEBDRIVER_URL}"
-#curl -o chromedriver.zip https://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip
-#curl -o chromedriver.zip http://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip
 unzip -o chromedriver.zip && rm -f chromedriver.zip
 
 cp tests/_data/users.yml.dist tests/_data/users.yml
